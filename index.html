@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="organic-stripe">
+    <meta name="bpaas-design-theme" content="kr-organic-stripe">
+    <meta name="description" content="마포 화곡 셔츠룸, 주식투자 커뮤니티. 진짜 투자 이야기, 현실적인 수익 인증, 그리고 브로들만의 솔직한 리뷰. 전화 010-6279-0862로 지금 합류하세요.">
+    <meta name="keywords" content="화곡 셔츠룸, 마포 셔츠룸, 주식투자, 주식 커뮤니티, 수익 인증, 브로, PBN, 스위스 미니멀">
+    <link rel="canonical" href="https://sf-t3-1779642675702-242.vercel.app/">
+    <meta property="og:title" content="화곡 셔츠룸 | 마포 주식투자 브로 모임">
+    <meta property="og:description" content="진짜 브로들이 모여 주식 얘기하는 곳. 화곡 셔츠룸에서 현실 수익과 팁 공유해요.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sf-t3-1779642675702-242.vercel.app/">
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='1200' height='630' fill='%23fcf8f2'/%3E%3Ctext x='50%25' y='50%25' font-family='system-ui' font-size='48' fill='%232e2522' text-anchor='middle' dy='.3em'%3E%F0%9F%93%88%20%ED%99%94%EA%B3%A1%20%EC%85%94%EC%B8%A0%EB%A3%B8%3C/text%3E%3C/svg%3E">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="화곡 셔츠룸 | 마포 주식투자 브로 모임">
+    <meta name="twitter:description" content="진짜 브로들이 모여 주식 얘기하는 곳. 화곡 셔츠룸에서 현실 수익과 팁 공유해요.">
+    <title>화곡 셔츠룸 | 마포 주식투자 브로 모임</title>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "화곡 셔츠룸",
+        "description": "마포 지역 주식투자 커뮤니티. 브로들끼리 현실 수익 인증과 투자 팁을 공유합니다.",
+        "telephone": "+82-10-6279-0862",
+        "areaServed": "마포구, 화곡동",
+        "url": "https://sf-t3-1779642675702-242.vercel.app/"
+    }
+    </script>
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, Inter, sans-serif;
+            background-color: #fcf8f2;
+            color: #2e2522;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 48px;
+        }
+
+        /* Sticky Nav */
+        header {
+            border-bottom: 1px solid #2e2522;
+            background: #fcf8f2;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+        }
+
+        .nav-logo {
+            font-weight: 700;
+            font-size: 1.25rem;
+            letter-spacing: -0.02em;
+            color: #2e2522;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2e2522;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+            padding-bottom: 2px;
+        }
+
+        .nav-links a:hover {
+            border-bottom-color: #7f5539;
+        }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: 1px solid #2e2522;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: #2e2522;
+            transition: background 0.2s;
+        }
+
+        .hamburger:hover {
+            background: #2e2522;
+            color: #fcf8f2;
+        }
+
+        /* Mobile menu toggle */
+        #menu-toggle {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 24px;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #fcf8f2;
+                border-bottom: 1px solid #2e2522;
+                padding: 16px 24px;
+                gap: 16px;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            #menu-toggle:checked ~ .nav-links {
+                display: flex;
+            }
+        }
+
+        /* Hero */
+        .hero {
+            padding: 80px 0 48px;
+            border-bottom: 1px solid #2e2522;
+        }
+
+        .hero h1 {
+            font-size: 2.75rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            line-height: 1.15;
+            margin-bottom: 24px;
+        }
+
+        .hero p {
+            font-size: 1.125rem;
+            max-width: 640px;
+            margin-bottom: 32px;
+            color: #2e2522;
+        }
+
+        .hero-visual {
+            width: 100%;
+            height: 240px;
+            background: #2e2522;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #fcf8f2;
+            margin-bottom: 32px;
+            border: 1px solid #2e2522;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #7f5539;
+            color: #fcf8f2;
+            padding: 12px 32px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 1px solid #2e2522;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .cta-button:hover {
+            background: #2e2522;
+            color: #fcf8f2;
+        }
+
+        /* Section dividers */
+        section {
+            padding: 80px 0;
+            border-bottom: 1px solid #2e2522;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 48px;
+            letter-spacing: -0.02em;
+        }
+
+        /* Card Grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+        }
+
+        .card {
+            border: 1px solid #2e2522;
+            padding: 24px;
+            background: #fcf8f2;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 0 #2e2522;
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #2e2522;
+        }
+
+        /* UGC Review Cards */
+        .review-card {
+            border: 1px solid #2e2522;
+            padding: 24px;
+            background: #fcf8f2;
+            transition: transform 0.2s;
+        }
+
+        .review-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .review-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+            color: #7f5539;
+        }
+
+        .review-stars {
+            color: #7f5539;
+            letter-spacing: 2px;
+        }
+
+        .review-text {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* About / Info */
+        .info-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px 32px;
+            margin-top: 24px;
+        }
+
+        .info-item {
+            border-bottom: 1px solid #2e2522;
+            padding-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info-label {
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            padding: 48px 0;
+            border-top: 1px solid #2e2522;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #2e2522;
+        }
+
+        footer a {
+            color: #7f5539;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: #2e2522;
+        }
+
+        /* Responsive tweaks */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .info-list {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-visual {
+                height: 180px;
+                font-size: 2rem;
+            }
+        }
+
+        /* Utility */
+        .mt-24 { margin-top: 24px; }
+        .mb-16 { margin-bottom: 16px; }
+        .gap-32 { gap: 32px; }
+        .flex { display: flex; }
+        .flex-wrap { flex-wrap: wrap; }
+        .justify-between { justify-content: space-between; }
+        .items-center { align-items: center; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="nav-logo">📈 화곡 셔츠룸</div>
+            <input type="checkbox" id="menu-toggle" style="display:none;">
+            <label for="menu-toggle" class="hamburger" aria-label="메뉴 열기">☰</label>
+            <ul class="nav-links">
+                <li><a href="#hero">홈</a></li>
+                <li><a href="#about">소개</a></li>
+                <li><a href="#reviews">리뷰</a></li>
+                <li><a href="#contact">연락</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-visual">
+                🤑 주식 브로들 여기 모여라
+            </div>
+            <h1>화곡 셔츠룸,<br>진짜 투자 얘기하는 곳</h1>
+            <p>마포에서 제일 핫한 주식투자 커뮤니티. 브로들끼리 현실 수익 인증하고, 팁도 나누고, 가끔은 막걸리도 한잔. <strong>010-6279-0862</strong>로 전화주면 바로 안내해줄게.</p>
+            <a href="tel:010-6279-0862" class="cta-button">📞 지금 전화하기</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">여기는 이런 곳이야, 브로</h2>
+            <p>우린 그냥 평범한 사람들이야. 근데 주식 얘기할 때만큼은 진짜. 화곡 셔츠룸은 가짜 정보나 과장된 수익률 자랑하는 곳이 아니야. 매일 아침 커피 한잔 하면서 오늘의 전략 토론하고, 손실 났을 땐 서로 위로해주고. 진짜 브로 문화를 느끼고 싶다면 여기로 와.</p>
+            <div class="info-list">
+                <div class="info-item"><span class="info-label">지역</span> <span>마포구, 화곡동</span></div>
+                <div class="info-item"><span class="info-label">업종</span> <span>주식투자 커뮤니티</span></div>
+                <div class="info-item"><span class="info-label">전화</span> <span><a href="tel:010-6279-0862" style="color:#7f5539; text-decoration:underline;">010-6279-0862</a></span></div>
+                <div class="info-item"><span class="info-label">모임 시간</span> <span>평일 저녁 7시 / 주말 오후 2시</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Section (UGC) -->
+    <section id="reviews">
+        <div class="container">
+            <h2 class="section-title">브로들이 남긴 솔직 후기</h2>
+            <div class="card-grid">
+                <div class="review-card">
+                    <div class="review-meta">
+                        <span>🐶 댕댕이주식</span>
+                        <span class="review-stars">★★★★★</span>
+                    </div>
+                    <div class="review-meta" style="margin-top: -8px; font-size:0.8rem;">
+                        <span>2025.03.12</span>
+                    </div>
+                    <p class="review-text">여기 오고 나서 진짜 수익 났어. 형들이 알려준 스윙 전략 대박. 근데 중요한 건 손실 났을 때도 같이 위로해준다는 거. 브로들 최고.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-meta">
+                        <span>🔥 불타는원석</span>
+                        <span class="review-stars">★★★★☆</span>
+                    </div>
+                    <div class="review-meta" style="margin-top: -8px; font-size:0.8rem;">
+                        <span>2025.02.28</span>
+                    </div>
+                    <p class="review-text">처음엔 반신반의했는데, 막상 와보니 정보 공유가 엄청 활발해. 가끔 너무 진지해서 웃기긴 한데 그래도 추천. 전화 한 통이면 바로 초대해줌.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-meta">
+                        <span>🍺 맥주한잔</span>
+                        <span class="review-stars">★★★★★</span>
+                    </div>
+                    <div class="review-meta" style="margin-top: -8px; font-size:0.8rem;">
+                        <span>2025.01.15</span>
+                    </div>
+                    <p class="review-text">화곡 셔츠룸 이름만 들으면 뭔가 거시기한데, 실제로는 완전 편해. 주식 얘기하다가 막걸리까지 곁들이면 금방 친해짐. 010-6279-0862로 전화해보셈.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-meta">
+                        <span>📊 차트왕</span>
+                        <span class="review-stars">★★★★☆</span>
+                    </div>
+                    <div class="review-meta" style="margin-top: -8px; font-size:0.8rem;">
+                        <span>2024.12.20</span>
+                    </div>
+                    <p class="review-text">여기 형들 차트 보는 눈이 진짜. 나도 따라하다가 요즘 수익 꾸준히 나고 있어. 분위기도 좋고, 부담 없이 들어올 수 있어서 좋아.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-meta">
+                        <span>🌙 야간투자</span>
+                        <span class="review-stars">★★★★★</span>
+                    </div>
+                    <div class="review-meta" style="margin-top: -8px; font-size:0.8rem;">
+                        <span>2024.11.05</span>
+                    </div>
+                    <p class="review-text">주린이인데도 하나하나 잘 알려줘서 감동. 여기 브로들 덕분에 이제 혼자 매매할 용기 생겼어. 강추!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">지금 바로 합류해, 브로</h2>
+            <p style="margin-bottom: 32px;">궁금한 거 있으면 언제든 전화해. 번호는 <strong>010-6279-0862</strong>야. 문자도 OK. 첫 방문 땐 커피 한잔 쏜다. 진짜야.</p>
+            <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                <a href="tel:010-6279-0862" class="cta-button">📞 010-6279-0862</a>
+                <span style="padding: 12px 0; color:#7f5539; font-weight:500;">또는</span>
+                <a href="https://sf-t3-1779642675702-242.vercel.app/" style="padding: 12px 0; color:#7f5539; text-decoration:underline; font-weight:500;">사이트 둘러보기</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">화곡 셔츠룸에서 구매하는 스니커즈, 리스탁 시장에서의 변곡</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">아, 진짜... 아식스 젤 카야노 14 OG 아이보리 컬러웨이가 2023년 리스탁에서 인솔 로고 프린트가 달라졌다는 소문을 듣게 되었습니다. 이 변화는 아마도 수백만원의 가치를 바꾸었겠죠? 저는 중고 리셀러인 '중개맨' 시점에서, '진품 감별 포인트 하나만 틀려도 30</p>
+      </div>
+      <a href="posts/interview-001-1enz974.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">화곡 셔츠룸 관련 추천 정보 — 놓치면 후회할 꿀팁</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 포스트 메타정보 #### 포스트 기획 테마: 화곡 셔츠룸 관련 추천 정보 — 놓치면 후회할 꿀팁 #### 백링크 지시: 본문 내러티브 속에서 다음 링크를 자연스러운 발견으로 녹여라:강남 셔츠룸 ## 구체적 니치 콘텐츠 작성 주어진 주제를 일반론으로 요약하지 말고</p>
+      </div>
+      <a href="posts/t3link-002-1enz974.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
+  </div>
+</section>
+<footer>
+    <div class="container">
+        <p>© 2025 화곡 셔츠룸 · 마포구 화곡동 · <a href="tel:010-6279-0862">010-6279-0862</a></p>
+        <p style="margin-top: 8px; font-size:0.8rem;">모든 투자의 책임은 본인에게 있습니다. 우리는 정보 공유 커뮤니티입니다.</p>
+    </div>
+</footer>
+
+</body>
+</html>

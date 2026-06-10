@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="organic-stripe">
+    <meta name="bpaas-design-theme" content="kr-organic-stripe">
+    <meta name="description" content="마포 화곡 셔츠룸 브로들의 주식투자 블로그. 진짜 경험담, 실패와 성공의 기록, 그리고 현실적인 투자 팁을 나눠요.">
+    <meta name="keywords" content="화곡 셔츠룸, 마포 셔츠룸, 주식투자 블로그, 주식 커뮤니티, 수익 인증, 브로, PBN, 스위스 미니멀">
+    <link rel="canonical" href="https://sf-t3-1779642675702-242.vercel.app/blog">
+    <meta property="og:title" content="화곡 셔츠룸 | 주식투자 브로 블로그">
+    <meta property="og:description" content="진짜 브로들이 써내려간 주식 이야기. 화곡 셔츠룸 블로그에서 만나요.">
+    <meta property="og:type" content="website">
+    <title>블로그 | 화곡 셔츠룸</title>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafaf9; color: #1c1917; line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        header { position: sticky; top: 0; z-index: 100; background: #fafaf9; border-bottom: 1px solid #e7e5e4; }
+        nav { display: flex; justify-content: space-between; align-items: center; height: 64px; padding: 0 20px; max-width: 1100px; margin: 0 auto; }
+        .nav-logo { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.02em; color: #1c1917; text-decoration: none; }
+        .nav-links { display: flex; gap: 32px; list-style: none; }
+        .nav-links a { text-decoration: none; color: #57534e; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: #1c1917; }
+        .hamburger { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #1c1917; padding: 8px; }
+        #menu-toggle { display: none; }
+        @media (max-width: 768px) {
+            .hamburger { display: block; }
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: #fafaf9; border-bottom: 1px solid #e7e5e4; padding: 16px 20px; gap: 16px; }
+            #menu-toggle:checked ~ .nav-links { display: flex; }
+        }
+        /* 페이지 스타일 */
+        .blog-page { padding: 60px 0 80px; }
+        .blog-header { margin-bottom: 48px; }
+        .blog-header h1 { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 16px; color: #1c1917; }
+        .blog-header p { font-size: 1.1rem; color: #57534e; max-width: 640px; line-height: 1.7; }
+        .blog-post { background: #fff; border-radius: 16px; padding: 48px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); border: 1px solid #e7e5e4; }
+        .blog-post .meta { display: flex; gap: 16px; align-items: center; margin-bottom: 24px; font-size: 0.85rem; color: #a8a29e; }
+        .blog-post .meta span { background: #f5f5f4; padding: 4px 12px; border-radius: 20px; }
+        .blog-post h2 { font-size: 1.6rem; font-weight: 700; margin: 32px 0 16px; letter-spacing: -0.02em; color: #1c1917; }
+        .blog-post h3 { font-size: 1.2rem; font-weight: 600; margin: 24px 0 12px; color: #292524; }
+        .blog-post p { margin-bottom: 20px; color: #44403c; font-size: 1.05rem; line-height: 1.8; }
+        .blog-post .highlight { background: #f5f5f4; padding: 24px; border-radius: 12px; margin: 24px 0; border-left: 4px solid #1c1917; }
+        .blog-post .highlight p { margin-bottom: 0; font-style: italic; }
+        .blog-post ul { margin: 16px 0 24px; padding-left: 24px; }
+        .blog-post ul li { margin-bottom: 10px; color: #44403c; font-size: 1.05rem; }
+        .blog-post .cta-box { background: #1c1917; color: #fafaf9; padding: 32px; border-radius: 12px; margin: 40px 0 0; text-align: center; }
+        .blog-post .cta-box h3 { color: #fafaf9; margin-bottom: 12px; font-size: 1.3rem; }
+        .blog-post .cta-box p { color: #d6d3d1; margin-bottom: 16px; }
+        .blog-post .cta-box a { display: inline-block; background: #fafaf9; color: #1c1917; padding: 12px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1rem; transition: background 0.2s; }
+        .blog-post .cta-box a:hover { background: #e7e5e4; }
+        footer { border-top: 1px solid #e7e5e4; padding: 40px 0; text-align: center; color: #a8a29e; font-size: 0.85rem; }
+        footer a { color: #57534e; text-decoration: none; }
+        footer a:hover { color: #1c1917; }
+        @media (max-width: 768px) {
+            .blog-post { padding: 24px; }
+            .blog-header h1 { font-size: 1.7rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="nav-logo">화곡 셔츠룸</a>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">☰</label>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/blog">블로그</a></li>
+                <li><a href="tel:01062790862">전화문의</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="blog-page">
+        <div class="container">
+            <div class="blog-header">
+                <h1>브로들의 주식 블로그</h1>
+                <p>진짜 투자 이야기, 현실적인 수익 인증, 그리고 화곡 셔츠룸에서 나누는 솔직한 리뷰까지. 매주 새로운 글로 찾아올게.</p>
+            </div>
+
+            <article class="blog-post">
+                <div class="meta">
+                    <span>주식투자</span>
+                    <span>2025.04.12</span>
+                    <span>by 브로</span>
+                </div>
+
+                <h2>화곡 셔츠룸 브로의 첫 수익 인증: 3개월 만에 20% 수익 낸 썰</h2>
+
+                <p>야, 형들. 나 화곡 셔츠룸에서 매주 목요일마다 모이는 브로야. 오늘은 진짜 내 경험담을 풀어보려고 해. 주식 시작한 지 3년 차인데, 그동안 엄청난 손실도 보고, 멘탈도 터지고, 거의 접을 뻔도 했거든. 근데 최근 3개월 동안 드디어 의미 있는 수익을 봤어. 20% 수익률이야. 물론 대단한 건 아니지만, 내겐 큰 이정표라서 기록으로 남겨본다.</p>
+
+                <p>사실 나도 처음엔 유튜브에서 "단타로 100% 수익" 이런 거 보고 덥석 물렸어. 근데 현실은 시궁창이더라고. 몇 번의 실패 끝에 알게 된 게, 결국엔 <strong>자기만의 원칙</strong>이 중요하더라. 화곡 셔츠룸 브로들하고 이런 얘기 나누면서 내 전략도 조금씩 다듬어졌어.</p>
+
+                <h3>내가 실천한 3가지 원칙</h3>
+                <ul>
+                    <li><strong>종목은 무조건 3개 이하:</strong> 분산투자 좋지만, 너무 많이 하면 관리가 안 돼. 집중해서 보는 게 훨씬 낫더라.</li>
+                    <li><strong>손절은 무조건 5%:</strong> 감정적으로 기다렸다가 더 큰 손실 본 적이 한두 번이 아니야. 5% 깨지면 그냥 팔아. 다시 들어오면 되지.</li>
+                    <li><strong>매일 장 마감 후 기록:</strong> 왜 샀고, 왜 팔았는지 한 줄이라도 적어둬. 나중에 보면 엄청 도움 돼.</li>
+                </ul>
+
+                <div class="highlight">
+                    <p>"주식에서 가장 중요한 건 수익률보다 멘탈이다. 멘탈 깨지면 아무리 좋은 전략도 소용없어." — 화곡 셔츠룸 브로가</p>
+                </div>
+
+                <p>솔직히 말하면, 이 20% 수익도 매일매일 쫄리면서 버틴 결과야. 특히 최근에 증시가 흔들릴 때는 멘탈이 금이 갔지만, 내 원칙을 믿고 버텼어. 그 결과가 이거야. 물론 앞으로도 계속 잘될 거라는 보장은 없지. 하지만 적어도 지금은 내가 가는 길이 맞다는 확신이 있어.</p>
+
+                <p>화곡 셔츠룸 브로들 사이에서는 요즘 이런 얘기들 많이 해. "결국엔 장기 투자가 답이다", "테마주는 조심해야 된다", "뉴스에 휩쓸리지 마라" 같은 기본적인 거지만, 매일매일 실천하는 게 진짜 어렵더라고. 근데 같이 얘기 나누는 사람들이 있으니까 덜 외롭고, 더 단단해지는 느낌이야.</p>
+
+                <div class="cta-box">
+                    <h3>함께 투자 얘기 나눌 브로를 찾는다면?</h3>
+                    <p>화곡 셔츠룸에서 매주 모여서 주식 얘기, 인생 얘기 나누고 있어. 진짜 같은 생각 가진 사람들만 모이는 곳이야. 관심 있으면 전화 한 번 줘.</p>
+                    <a href="tel:01062790862">010-6279-0862</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 화곡 셔츠룸 | 마포구 주식투자 브로 모임 | <a href="tel:01062790862">010-6279-0862</a></p>
+        </div>
+    </footer>
+</body>
+</html>
